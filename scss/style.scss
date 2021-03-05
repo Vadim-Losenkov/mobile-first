@@ -9,9 +9,17 @@ html {
   box-sizing: inherit;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
+  font-family: 'Roboto-Medium', 'Arial', 'Sans-Serif';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .container {
@@ -96,5 +104,29 @@ body {
 @media (min-width: 1440px) {
   .menu__btn {
     margin-right: 90px;
+  }
+}
+
+.head {
+  background-image: url('../images/bg-slider.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33,33,33, 0.5);
+  &__item {
+    color: #fff;
+    text-align: center;
+  }
+  &__title {
+    font-family: 'RobotoCondensed-Regular';
+    line-height: 28px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 36px 0 28px;
   }
 }

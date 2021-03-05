@@ -1,3 +1,52 @@
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"), url("../fonts/RobotoCondensed-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Dosis-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Dosis-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Dosis-Light.woff2") format("woff2"), url("../fonts/Dosis-Light.woff") format("woff");
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,9 +57,17 @@ html {
           box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
+  font-family: 'Roboto-Medium', 'Arial', 'Sans-Serif';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .container {
@@ -107,5 +164,31 @@ body {
   .menu__btn {
     margin-right: 90px;
   }
+}
+
+.head {
+  background-image: url("../images/bg-slider.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33, 33, 33, 0.5);
+}
+
+.top-slider__item {
+  color: #fff;
+  text-align: center;
+}
+
+.top-slider__title {
+  font-family: 'RobotoCondensed-Regular';
+  line-height: 28px;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 36px 0 28px;
 }
 /*# sourceMappingURL=style.css.map */
